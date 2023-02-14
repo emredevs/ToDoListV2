@@ -15,13 +15,19 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
   list-style-type: none;
-
+  display: flex;
+  justify-content: space-between;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
+ul li span {
+  margin-right: 5%;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+}
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
