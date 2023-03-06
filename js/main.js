@@ -5,7 +5,7 @@ let alert = document.querySelector("#alert");
 const alertTrue = ` <div class="alert alert-success" role="alert">
 Listeye Eklendi
 </div>`;
-const alertEror = `<div class="alert alert-danger" role="alert">
+const alertError = `<div class="alert alert-danger" role="alert">
 Listeye Boş Liste Ekleyemezsiniz
 </div>`;
 liveToastBtn.addEventListener("click", BtnClick);
@@ -24,7 +24,7 @@ function BtnClick() {
       list.removeChild(newTask);
     });
   } else {
-    alert.innerHTML = alertEror;
+    alert.innerHTML = alertError;
   }
 }
 document.querySelector("#clear").addEventListener("click", function clear() {
